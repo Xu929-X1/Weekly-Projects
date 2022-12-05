@@ -1,0 +1,97 @@
+.login {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(193, 190, 255);
+    .login--card {
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(193, 190, 255);
+        width: 50%;
+        border-radius: 10px;
+        min-height: 600px;
+        min-width: 1000px;
+        overflow: hidden;
+
+        .login--card-left {
+            flex: 1;
+            background-image: linear-gradient(rgb(39, 11, 96, 0.7), rgb(39, 11, 96, 0.5)), url("https://images.pexels.com/photos/976866/pexels-photo-976866.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); 
+            background-size: cover;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            gap:50px;
+            color: white;
+            h1 {
+                font-size: 100px;
+                line-height: 100px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            span {
+                font-size: 14px;
+            }
+
+            button {
+                width: 50%;
+                padding: 10px;
+                border: none;
+                background-color: white;
+                color:rgb(39, 11, 96, 0.5);
+                font-weight: bold;
+                cursor:pointer;
+
+                &:hover{
+                    background-color:rgb(39, 11, 96, 0.5);
+                    color: white;
+                }
+            }
+        }
+
+        .login--card-right {
+            flex: 1;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            background-color: white;
+            justify-content: center;
+            h1{
+                color: #555;
+            }
+            form {
+                display: flex;
+                flex-direction: column;
+                gap:30px;
+                input {
+                    width: 100%;
+                    border:none;
+                    border-bottom: 1px solid lightgrey;
+                    padding: 20px 10px;
+                    &:focus{
+                        outline: none;
+                    }
+                }
+
+                button {
+                    width: 50%;
+                    padding: 10px;
+                    border: none;
+                    background-color: rgb(39, 11, 96, 0.5);
+                    color:white;
+                    font-weight: bold;
+                    cursor:pointer;
+                    &:hover{
+                        background-color:white;
+                        color: rgb(39, 11, 96, 0.5);
+                    }
+                }
+            }
+        }
+    }
+}
